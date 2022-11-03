@@ -1,8 +1,8 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center ;
-    padding: 16px 0;
+    padding: 16px 130px;
     box-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
     
 }
@@ -48,7 +48,6 @@
 .header-link:focus {
    
     color: var(--color-black);
-    /*font-family: var(--font-family-Bold);*/
     transform: scale(1.1);
     
      
@@ -65,6 +64,7 @@
     border: none;
     transition: background var(--animation-speed) var(--animation-func);
 
+    border-radius: 16px;
     font-size: 24px;
     font-family: var(--font-family-Bold);  /*text*/
     cursor: pointer;
@@ -79,8 +79,7 @@
 }
 
 
-.header-burger-menu {
+.header-dropdown-menu {
 	display: none;
 }
-
 
