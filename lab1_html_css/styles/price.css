@@ -110,6 +110,7 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 999px;
+	flex-shrink: 0;
 	margin-right: 16px;
 	background: var(--color-greenLight) url('../images/icons/icon-check.svg') no-repeat center;
 }

@@ -136,6 +136,9 @@
 	grid-row: 4 / 6;
 }
 
+.main-arrow-right{
+	display: none;
+}
 
 /*button*/
 
