@@ -14,6 +14,7 @@
 
 .header-logo-name {
     font-size: 48px;
+    color: var(--color-black);
     font-family: var(--font-family-Bold);
 }
 
@@ -75,6 +76,11 @@
 .button-sign-in:focus,
 .button-sign-in:hover {
     background: var(--color-grayDark);
+}
+
+
+.header-burger-menu {
+	display: none;
 }
 
 
