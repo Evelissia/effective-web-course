@@ -1,0 +1,186 @@
+.price {
+    padding: 70px 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.price-title {
+	font-family: var(--font-family-Bold);
+	font-size: 64px;
+	color:  var(--color-black);
+	margin: 0;
+}
+
+.price-subtitle {
+	font-family: var(--font-family-Bold);
+	font-size: 32px;
+	color:  var(--color-grayLight);
+	margin: 0;
+	margin-top: 34px;
+}
+
+.price-subtitle span {
+	position: relative;
+	color:  var(--color-purpleDark);
+}
+
+.price-cards {
+	display: flex;
+	margin-top: 40px;
+}
+
+.price-card {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	margin-right: 30px;
+	padding: 32px;
+	border-radius: 16px;
+	background-color: var(--color-white);
+}
+
+.price-subtitle span::after {
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height:  12px;
+	background: var(--color-yellowDark);
+	border-radius: 999px;
+	z-index: -1;
+}
+
+.price-card:last-child {
+	margin-right: 0;
+}
+
+.price-card-title {
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	font-family: var(--font-family-Medium);
+	color: var(--color-purpleDark);
+}
+
+.price-card-title-best {
+    text-align: center;
+	font-size: 12px;
+	font-family: var(--font-family-Bold);
+	color: var(--color-black);
+	padding: 8px;
+	border: 1px solid var(--color-purpleDark);
+	border-radius: 99px;
+	width: 74px;
+}
+
+.price-card-amount {
+	margin-top: 16px;
+	color: var(--color-black);
+	font-family: var(--font-family-Bold);
+	font-size: 12px;
+}
+
+.price-card-amount span {
+	font-size: 48px;
+}
+
+.price-card-service {
+	margin-top: 28px;
+	margin-bottom: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.price-card-service li {
+	display: flex;
+	align-items: center;
+	margin-top: 24px;
+	color: var(--color-black);
+	font-family: var(--font-family-Regular);
+	font-size: 18px;
+}
+
+.price-card-service li::before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 999px;
+	flex-shrink: 0;
+	margin-right: 16px;
+	background: var(--color-greenLight) url('../images/icons/icon-check.svg') no-repeat center;
+}
+
+.price-card:hover {
+	box-shadow: 0px 8px 8px rgba(38, 50, 56, 0.12), 0px 16px 24px rgba(38, 50, 56, 0.08);
+}
+
+.price-card::after {
+	position: absolute;
+	bottom: -30px;
+	left: -30px;
+	content: '';
+	display: block;
+	width: 200px;
+	height: 130px;
+	z-index: -1;
+	opacity: 0;
+	background: url('../images/background/Desktop/Wiggle.svg') ;
+}
+
+.price-card:hover::after {
+	opacity: 1;
+}
+
+/*button*/
+
+.price-button {
+	margin-top: 20px;
+	height: 64px;
+	font-size: 18px;
+	font-family: var(--font-family-Bold);
+}
+
+.default-button{
+    border: 1px solid var(--color-grayLight);
+    background: transparent;
+    border-radius: 16px;
+    color: var(--color-purpleDark);
+    transition: color var(--animation-speed) var(--animation-func);
+    border-color: var(--animation-speed) var(--animation-func);
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.default-button:hover,
+.default-button:focus {
+    color: var(--color-purpleLight);
+    border-color: var(--color-graySoft);
+}
+
+/*кнопка посередине*/
+
+.primary-button {
+	font-size: 24px;
+    font-family: var(--font-family-Bold);
+    cursor: pointer;
+    outline: none;
+
+	
+    background: var(--color-purpleDark);
+    color: var(--color-white); 
+    border: none;
+    transition: background var(--animation-speed) var(--animation-func);
+
+	border-radius: 16px;
+}
+
+
+.primary-button:hover,
+.primary-button:focus{
+    background: var(--color-purpleLight);
+}
