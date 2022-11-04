@@ -134,7 +134,7 @@
 	opacity: .45;
 }
 
-.footer-feedback-form label > div {
+.footer-feedback-form label > span {
 	position: absolute;
 	top: 0;
 	left: 0;

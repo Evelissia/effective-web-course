@@ -72,13 +72,15 @@
     }
 
     .main-button{
-        height: 37px;
-        width: 130px;
-        font-size: 14px;
+        height: 34px;
+        width: 120px;
+        font-size: 12px;
         background: var(--color-black); 
 
         grid-column: 5 / 6;
 	    grid-row: 7 / 8;
+
+        overflow:visible;
     }
 
     .main{
@@ -91,9 +93,10 @@
     }
 
     .main-grid{
-        width: 100vw;
+        width: 105vw;
         grid-gap: 3vw;
         margin-top: 24px;
+        overflow: hidden;
 
     }
 
