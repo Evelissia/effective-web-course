@@ -7,7 +7,7 @@
     <title>Timer</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
-<body id="bd">
+<body>
     
     <div class="timer">
         <div class="btn-harvest-time">
@@ -16,35 +16,34 @@
             <button class="harv-time-button" id="10min">ten minutes</button>
         </div>
 
-        <div class="container">
-            <div class="inputs">
+      
+        <div class="inputs">
                 <input
+                type="number"
                 class="control-input"
-                type="text"
-                id="minutes"
-                value="00"
-                maxlength="2"
+                id="min-input"
+                onchange="inputChange()"
               />
-              <span>:</span>
+              :
               <input
+                type="number"
                 class="control-input"
-                type="text"
-                id="seconds"
-                value="00"
-                maxlength="2"
+                id="sec-input"
+                onchange="inputChange()"
               />
-            </div>
+         </div>
+        
 
             <div class="control-buttons">
                 <button class="timer-control-button" id="startBtn">Start</button>
                 <button class="timer-control-button" id="stopBtn">Stop</button>
                 <button class="timer-control-button" id="resetBtn">Reset</button>
             </div>
-        </div>
+       
 
     </div>
 
-    <script src="./script.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
