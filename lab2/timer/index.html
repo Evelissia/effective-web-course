@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    
+    <div class="timer">
+        <div class="btn-harvest-time">
+            <button class="harv-time-button" id="1min">one minute</button>
+            <button class="harv-time-button" id="5min">five minutes</button>
+            <button class="harv-time-button" id="10min">ten minutes</button>
+        </div>
+
+      
+        <div class="inputs">
+                <input
+                type="number"
+                class="control-input"
+                id="min-input"
+                onchange="inputChange()"
+              />
+              :
+              <input
+                type="number"
+                class="control-input"
+                id="sec-input"
+                onchange="inputChange()"
+              />
+         </div>
+        
+
+            <div class="control-buttons">
+                <button class="timer-control-button" id="startBtn">Start</button>
+                <button class="timer-control-button" id="stopBtn">Stop</button>
+                <button class="timer-control-button" id="resetBtn">Reset</button>
+            </div>
+       
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

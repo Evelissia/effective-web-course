@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(73, 73, 73);
+}
+
+.timer {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.btn-harvest-time {
+    display: flex;
+	padding: 25px;
+	gap: 20px;
+}
+
+.harv-time-button {
+    background-color: rgb(233, 223, 185);
+    font-weight: 500;
+	font-size: 18px;
+	padding: 20px 35px;
+	border-radius: 15px;
+    border: none;
+	cursor: pointer;
+}
+
+.harv-time-button:hover {
+    background-color: #c9b459;
+}
+
+.harv-time-button:active {
+    background-color: #ae9c48;
+}
+
+
+.timer-control-button {
+    background-color: rgb(233, 223, 185);
+    font-weight: 500;
+	font-size: 18px;
+	padding: 20px 35px;
+	border-radius: 15px;
+    border: none;
+	cursor: pointer;
+}
+
+.timer-control-button:hover{
+    background-color: #c9b459;
+}
+
+.timer-control-button:active {
+    background-color: #ae9c48;
+}
+
+.inputs {
+    display: flex;
+	padding-bottom: 25px;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.control-input {
+    height: 50px;
+	width: 50px;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.audio {
+    background-color: rgb(169, 73, 73);
+}
