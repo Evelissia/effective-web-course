@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1
     },
     logo: {
-      maxWidth: 40,
+      maxWidth: 70,
       marginRight: '10px'
     },
     menuButton: {
