@@ -1,7 +1,8 @@
 import { FC } from 'react';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import { Outlet, RouteObject, useRoutes } from 'react-router-dom';
 import { Grid, Container, Paper } from '@material-ui/core';
+
 
 /*Header and Footer*/
 import Header from './components/Header/index';
@@ -38,6 +39,7 @@ const App = () => {
     <div>
       <Header />
       
+        
       <Footer />
     </div>
   );
