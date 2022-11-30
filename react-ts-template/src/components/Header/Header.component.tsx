@@ -6,7 +6,8 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     header: {
-      backgroundColor: '#B22222'
+      backgroundColor: '#B22222',
+      position: 'fixed'
     },
     root: {
       flexGrow: 1

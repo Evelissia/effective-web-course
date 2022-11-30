@@ -5,6 +5,8 @@ import image3 from '../assets/characters/punisher.jpg';
 import image4 from '../assets/characters/spiderman.jpg';
 import image5 from '../assets/characters/thor.jpg';
 import image6 from '../assets/characters/wolveriner.jpg';
+import image7 from '../assets/characters/captain.jpg';
+import image8 from '../assets/characters/deadpool.jpg';
 
 export const charactersData: Array<cardTypes> = [
   {
@@ -53,5 +55,22 @@ export const charactersData: Array<cardTypes> = [
     name: 'Wolveriner',
     description:
       'A long-lived mutant with the rage of a beast and the soul of a Samurai, James "Logan" Howlett once mysterious past is filled with blood, war, and betrayal.'
-  }
+  },
+
+  {
+    id: 'im_7',
+    image: image7,
+    name: 'Captain',
+    description:
+      'During World War II, Steve Rogers volunteered to receive the experimental Super-Soldier Serum. Enhanced to the pinnacle of human physical potential and armed with an unbreakable shield, he became Captain America. After a failed mission left him encased in ice for decades, he was found and revived by the Avengers'
+  },
+
+  {
+    id: 'im_8',
+    image: image8,
+    name: 'Deadpool',
+    description:
+      "Wade Wilson is a former test subject of the Weapon X program, where he received his regenerative healing factor through the scientific experiments conducted upon him. A prominent enemy, ally and later, member of X-Force. He's famous for breaking the Fourth Wall."
+  },
+
 ];

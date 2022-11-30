@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: '20px 30px',
       height: '22vh',
       marginTop: 100,
-      backgroundColor: '#595959'
+      backgroundColor: '#595959',
+      position: 'fixed',
     },
     logo: {
       '& img': {
@@ -31,8 +32,8 @@ export default function Footer() {
   const year: number = new Date().getFullYear();
 
   return (
-    <Grid item>
-      <AppBar position="absolute" className={classes.root}>
+    <footer>
+      <AppBar position="absolute" color='secondary' className={classes.root}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item className={classes.logo}>
             <img src={logo} alt="logo" />
@@ -51,6 +52,6 @@ export default function Footer() {
           </Grid>
         </Grid>
       </AppBar>
-    </Grid>
+    </footer>
   );
 }
