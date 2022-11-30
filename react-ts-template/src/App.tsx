@@ -13,7 +13,7 @@ import Comics from './pages/Comics/index';
 import Series from './pages/Series/index';
 
 const App = () => {
-  const routes: RouteObject[] = [
+  /*const routes: RouteObject[] = [
     {
       path: '/',
       element: <Outlet />,
@@ -30,14 +30,14 @@ const App = () => {
         { path: '*', element: <Characters /> }
       ]
     }
-  ];
+  ];*/
 
-  const routesElement = useRoutes(routes);
+  /*const routesElement = useRoutes(routes);*/
 
   return (
     <div>
       <Header />
-      <Grid item>{routesElement}</Grid>
+      
       <Footer />
     </div>
   );
