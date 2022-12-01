@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     header: {
       backgroundColor: '#B22222',
-      position: 'fixed'
+      position: 'fixed',
+      height: '60px'
     },
     root: {
       flexGrow: 1

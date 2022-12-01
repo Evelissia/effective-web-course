@@ -39,7 +39,8 @@ const App = () => {
 
   return (
     <div>
-      <Footer />
+      <Header />
+      <Series />
     </div>
   );
 };

@@ -3,19 +3,31 @@ import { Box, Grid, Typography} from '@material-ui/core';
 import {charactersData} from '../../mocks/characters-data';
 import Cards from '../../components/Cards';
 import Search from '../../components/Search';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      paddingTop: '60px'
+    }
+  })
+);
 
 const Characters: FC = () => {
+  const classes = useStyles();
   return (
-    <Box>
+    <Box className={classes.root}>
       <Typography
         variant="h2"
-        component="h2"
+        component="h2" 
+         
       >
         Characters({charactersData.length})
       </Typography>
       <Search />
 
-      <Grid container justifyContent="space-around">
+      <Grid container justifyContent="space-around" >
         {charactersData.map((item) => (
           <Cards
             key={item.id}
