@@ -9,7 +9,9 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      paddingTop: '60px'
+      paddingTop: '70px',
+      marginLeft: "15px",
+      marginBottom: "30px"
     }
   })
 );
@@ -27,7 +29,7 @@ const Characters: FC = () => {
       </Typography>
       <Search />
 
-      <Grid container justifyContent="space-around" >
+      <Grid container justifyContent="space-around">
         {charactersData.map((item) => (
           <Cards
             key={item.id}

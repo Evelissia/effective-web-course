@@ -14,6 +14,15 @@ import Comics from './pages/Comics/index';
 import Series from './pages/Series/index';
 
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      minHeight: '92.8vh',
+      flexGrow: 1
+    }
+  })
+);
+
 const App = () => {
   /*const routes: RouteObject[] = [
     {
@@ -34,13 +43,14 @@ const App = () => {
     }
   ];
   
-  const routesElement = useRoutes(routes);*/
-
+  const routesElement = useRoutes(routes);
+  const classes = useStyles();*/
 
   return (
     <div>
       <Header />
-      <Series />
+      <Characters />
+      <Footer />
     </div>
   );
 };

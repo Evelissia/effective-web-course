@@ -4,11 +4,16 @@ import { comicsData } from '../../mocks/comics-data';
 import Cards from '../../components/Cards';
 import Search from '../../components/Search';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import Footer from '../../components/Footer';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      paddingTop: '60px'
+      paddingTop: '70px',
+      marginLeft: "15px",
+      marginBottom: "30px",
+      height: "100%"
+      
     }
   })
 );

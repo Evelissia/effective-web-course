@@ -12,11 +12,10 @@ import logo from '../../assets/marvel_logo.svg';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      padding: '20px 30px',
+      padding: "20px 30px",
       height: '22vh',
-      marginTop: 100,
       backgroundColor: '#595959',
-      position: 'fixed',
+      flexDirection: 'column'
     },
     logo: {
       '& img': {
@@ -32,7 +31,7 @@ export default function Footer() {
   const year: number = new Date().getFullYear();
 
   return (
-    <footer>
+    <Grid item>
       <AppBar position="absolute" color='secondary' className={classes.root}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item className={classes.logo}>
@@ -52,6 +51,6 @@ export default function Footer() {
           </Grid>
         </Grid>
       </AppBar>
-    </footer>
+    </Grid>
   );
 }
