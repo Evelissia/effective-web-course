@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { Outlet, RouteObject, useRoutes } from 'react-router-dom';
 import { Grid, Container, Paper } from '@material-ui/core';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
 /*Header and Footer*/
 import Header from './components/Header/index';
@@ -12,16 +11,6 @@ import Footer from './components/Footer/index';
 import Characters from './pages/Characters/index';
 import Comics from './pages/Comics/index';
 import Series from './pages/Series/index';
-
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      minHeight: '92.8vh',
-      flexGrow: 1
-    }
-  })
-);
 
 const App = () => {
   const routes: RouteObject[] = [
@@ -44,7 +33,6 @@ const App = () => {
   ];
   
   const routesElement = useRoutes(routes);
-  const classes = useStyles();
 
   return (
     <div>

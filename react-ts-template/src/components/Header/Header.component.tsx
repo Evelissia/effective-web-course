@@ -2,6 +2,7 @@ import { AppBar, Toolbar, Button, Grid } from '@material-ui/core';
 import React from 'react';
 import logo from '../../assets/marvel_logo.svg';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import NavigationButton from '../Navigation-button';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,10 +32,10 @@ export default function Header() {
       <AppBar position="absolute" className={classes.header}>
         <Toolbar>
           <img src={logo} className={classes.logo} />
-          <Grid className={classes.menuButton}>
-            <Button color="inherit">Characters</Button>
-            <Button color="inherit">Comics</Button>
-            <Button color="inherit">Series</Button>
+          <Grid container className={classes.menuButton} spacing={5} alignItems="center">
+            <NavigationButton linkTo="/" title="Characters" />
+            <NavigationButton linkTo="/comics" title="Comics" />
+            <NavigationButton linkTo="/series" title="Series" />
           </Grid>
         </Toolbar>
       </AppBar>
