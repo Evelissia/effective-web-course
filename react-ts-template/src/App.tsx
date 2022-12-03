@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const App = () => {
-  /*const routes: RouteObject[] = [
+  const routes: RouteObject[] = [
     {
       path: '/',
       element: <Outlet />,
@@ -44,12 +44,13 @@ const App = () => {
   ];
   
   const routesElement = useRoutes(routes);
-  const classes = useStyles();*/
+  const classes = useStyles();
 
   return (
     <div>
+     
       <Header />
-      <Characters />
+      {routesElement}
       <Footer />
     </div>
   );

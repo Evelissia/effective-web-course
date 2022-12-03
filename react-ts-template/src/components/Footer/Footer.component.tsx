@@ -32,7 +32,7 @@ export default function Footer() {
 
   return (
     <Grid item>
-      <AppBar position="absolute" color='secondary' className={classes.root}>
+      <AppBar position="static" color='secondary' className={classes.root}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item className={classes.logo}>
             <img src={logo} alt="logo" />
