@@ -6,8 +6,10 @@ import {
   Card as MuiCard,
   CardMedia,
   CardContent,
-  Box
+  Box,
+  CardActionArea
 } from '@material-ui/core';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -21,21 +23,33 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Cards: FC<cardTypes> = ({ id, image, name, description }) => {
+interface CardProps extends cardTypes {
+  type: string;
+}
+
+const Cards: FC<CardProps> = ({ id, image, name, description, type }) => {
   const classes = useStyles();
+  const navigate = useNavigate();
+
+  const handleClick: () => void = () => {
+    navigate(`/${type}/${id}`);
+  };
+
   return (
     <Box border={1} borderColor="secondary.main" className={classes.root}>
-      <MuiCard className={classes.card}>
-        <CardMedia component="img" height="350" image={image} alt="item" />
-        <CardContent>
-          <Typography variant="h5" color="primary">
-            {name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary">
-            {description}
-          </Typography>
-        </CardContent>
-      </MuiCard>
+      <CardActionArea>
+        <MuiCard className={classes.card} onClick={handleClick}>
+          <CardMedia component="img" height="350" image={image} alt="item" />
+          <CardContent>
+            <Typography variant="h5" color="primary">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              {description}
+            </Typography>
+          </CardContent>
+        </MuiCard>
+      </CardActionArea>
     </Box>
   );
 };
